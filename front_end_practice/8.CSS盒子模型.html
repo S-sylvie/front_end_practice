@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS盒子模型</title>
+    <style>
+        .demo{
+            background-color: aqua;
+            display: inline-block;
+            border: 5px solid yellowgreen;/*实线：solid 虚线：dashed 点线：dotted 双实线：double*/
+            padding: 50px;
+            margin: 40px;
+        }
+        .border-demo{
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            border-style: solid dashed dotted double;/*顺序为上 右 下 左*/
+            border-width: 10px;
+            border-color: blueviolet blue  red green;
+            border-left:5px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">Taylor Swift</div>
+    <br><br>
+    <div class="border-demo">这是一个边框示例</div>
+</body>
+</html>

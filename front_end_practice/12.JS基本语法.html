@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基础语法</title>
+</head>
+<body>
+    <script>
+        var x;//var声明的变量具有函数作用域
+        let y=5;//let声明的变量具有块级作用域，let更安全更灵活
+        const PI=3.14;//常量
+        console.log(x,y,PI);
+        let name='Sylvie';//字符串
+        console.log(name);
+        let empty_value=null;//空值
+        console.log(empty_value);
+        //undefined表示一个变量已经被声明，但尚未被赋值，或者是说一个对象属性不存在，当函数没有返回值时，默认返回的也是undefined,null表示一个变量被明确赋值为空，表示一个空对象引用或者没有对象值
+        let age=19;
+        //条件语句
+        if (age>18){
+            console.log('你已经成年了');
+        }
+        else{
+            console.log('未成年');
+        }
+        let time=12;
+        if(time<12){
+            alert('上午好');
+        }
+        else if(time<18){
+            alert('下午好');
+        }
+        else{
+            alert('晚上好');
+        }
+        //循环语句
+        console.log('for循环');
+        for(let i=1;i<=10;i++){
+            console.log(i);
+        }
+        console.log('while循环');
+        let cnt=1;
+        while(cnt<=10){
+            console.log(cnt);
+            cnt++;
+        }
+        
+    </script>
+</body>
+</html>
